@@ -13,7 +13,7 @@ import (
 
 // TicketAPIHandler struct
 type TicketAPIHandler struct {
-	client Client
+	client *Client
 }
 
 // SingleTicket result

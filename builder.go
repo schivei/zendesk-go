@@ -9,14 +9,14 @@ import (
 )
 
 // FromToken func loads Client basedon Auth Basic access
-func FromToken(config Configuration) Client {
+func FromToken(config Configuration) *Client {
 	username := fmt.Sprintf("%s/token", config.Email)
 
 	restyClient := resty.SetBasicAuth(username, config.Token)
 	restyClient.SetHeader("Accept", "application/json")
 	restyClient.SetHeader("Content-Type", "application/json")
 
-	return Client{
+	return &Client{
 		domain:     config.Domain,
 		apiVersion: config.APIVersion,
 		client:     restyClient,

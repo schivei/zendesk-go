@@ -11,7 +11,7 @@ import (
 
 // UserAPIHandler struct
 type UserAPIHandler struct {
-	client Client
+	client *Client
 }
 
 // SingleUser result
