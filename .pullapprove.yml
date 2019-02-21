@@ -1,1 +1,48 @@
-extends: hellofresh
+version: 2
+groups:
+  code-review:
+    approve_by_comment:
+      approve_regex: ^Approved
+      enabled: true
+      reject_regex: ^Rejected
+    required: -1
+    reset_on_push:
+      enabled: false
+    users:
+    - albertojgomez
+    - aleksandrzhiliaev
+    - avromao
+    - bobdiem
+    - c4pone
+    - chrisfresh
+    - cschwarzqa
+    - darienhf
+    - endeveit
+    - fedebertolini
+    - georgizhivankin
+    - hellofresh-sync
+    - iuriinedostup
+    - jhuliano
+    - josemussa
+    - jvalecillos
+    - k11k11
+    - kaivg
+    - kieranajp
+    - krokonstantin
+    - luisandani
+    - mandoz
+    - nonnus
+    - nsimaria
+    - olvlvl
+    - pepijnsenders
+    - robertke
+    - schmidtks
+    - shonjord
+    - ssola
+    - stefvaessen
+    - tiagojsalmeida
+    - toebtoeb
+    - vannenc
+    - vxplus
+    - wellfreire
+    - zeelax
